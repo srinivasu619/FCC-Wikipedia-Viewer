@@ -27,9 +27,9 @@ function call(searchterm)
       $('#searchquery').text('You Searched for " '+data[0]+' "');
       for(var i=0;i<data[1].length;i++)
         {
-          var elem='<div><h4><a href="'+data[3][i]+'" target="_blank">'+data[1][i]+'</a></h4><p>'+data[2][i]+'</p></div>';
+          var elem='<div class="result"><h3><a class="noDeco" href="'+data[3][i]+'" target="_blank">'+data[1][i]+'</a></h3><p>'+data[2][i]+'</p></div>';
           $('#resultsContainer').append(elem);
         }
     }
-  });
+  })
 }
