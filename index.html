@@ -7,13 +7,17 @@
     </head>
     <body>
         <div id="mainConatiner">
+            <h1>Wiki Viewer</h1>
             <div id="inputContainer">
-                <input type="text" id="searchval" placeholder="Search ....">
-                <button id="searchbutton">Search</button>
-                <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">RANDOM</a>
+                <input type="text" id="searchval" placeholder="Search ...."
+                    spellcheck="false">
+                <div id="buttons">
+                <i class="fa fa-search fa-2x" aria-hidden="true" id="searchbutton"></i>
+                <a class="noDeco" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><i class="fa fa-random fa-2x" aria-hidden="true"></i></a>
+                </div>
             </div>
-                <h4 id="searchquery"></h4>
-                <div id=resultsContainer>
+            <h4 id="searchquery"></h4>
+            <div id=resultsContainer>
             </div>
         </div>
     </body>
